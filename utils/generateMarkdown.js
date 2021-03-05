@@ -2,39 +2,39 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ## Description
-  
-  ${data.description}
+## Description
 
-  ## Table of Contents
+${data.description}
 
-  ## Installation
+## Table of Contents
 
-  ${data.install}
+## Installation
 
-  ## Usage
+${data.install}
 
-  ${data.usage}
+## Usage
 
-  ## License
+${data.usage}
 
-  ${data.license}
+## License
 
-  ## Contributing
+${data.license}
 
-  ${data.contribution}
+## Contributing
 
-  ## Tests
+${data.contribution}
 
-  ${data.test}
+## Tests
 
-  ## Questions
+${data.test}
 
-  Q: Where can I find your other projects?
-  A: At my github profile, just follow this link: [Github Profile](https://www.github.com/${data.username})
+## Questions
 
-  Q: How can I reach you with questions about your project?
-  A: Feel free to email me at ${data.email}
+Q: Where can I find your other projects?
+A: At my github profile, just follow this link: [Github Profile](https://www.github.com/${data.username})
+
+Q: How can I reach you with questions about your project?
+A: Feel free to email me at ${data.email}
 `;
 }
 
