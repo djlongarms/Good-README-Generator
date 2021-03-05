@@ -1,5 +1,6 @@
 // Initialize the inquirer package
 const inquirer = require('inquirer')
+const fs = require('fs')
 const generate = require('./utils/generateMarkdown.js')
 
 // array of questions for user
@@ -9,7 +10,10 @@ const questions = [
   'How do you install your project?',
   'How is your project meant to be used?',
   'How should people contribute to your project?',
-  'How should people test your project?'
+  'How should people test your project?',
+  'What kind of license are you using?',
+  'What is your github username?',
+  'What is your email address?'
 ]
 
 // function to write README file
@@ -43,6 +47,19 @@ function init() {
       type: 'input',
       name: 'tests',
       message: questions[5],
+    }, {
+      type: 'list',
+      name: 'license',
+      message: questions[6],
+      choices: ['One', 'Two', 'Three']
+    }, {
+      type: 'input',
+      name: 'username',
+      message: questions[7],
+    }, {
+      type: 'input',
+      name: 'email',
+      message: questions[8],
     }
   ])
     .then(res => {
