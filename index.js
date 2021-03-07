@@ -54,7 +54,7 @@ function init() {
       type: 'list',
       name: 'license',
       message: questions[6],
-      choices: ['MIT', 'GNU GPLv3', 'Apache', 'OpenBSD', 'None'],
+      choices: ['MIT', 'GNU GPLv3', 'Apache', 'None'],
     }, {
       type: 'input',
       name: 'username',

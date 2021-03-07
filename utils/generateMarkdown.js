@@ -1,6 +1,19 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+  let license = ''
+  switch (data.license) {
+    case 'MIT':
+      license = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+      break
+    case 'GNU GPLv3':
+      license = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+      break
+    case 'Apache':
+      license = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+      break
+  }
   return `# ${data.title}
+${license}
 
 ## Description
 
