@@ -54,7 +54,7 @@ function init() {
       type: 'list',
       name: 'license',
       message: questions[6],
-      choices: ['One', 'Two', 'Three']
+      choices: ['MIT', 'GNU GPLv3', 'Apache', 'OpenBSD', 'None'],
     }, {
       type: 'input',
       name: 'username',
@@ -66,7 +66,7 @@ function init() {
     }
   ])
     .then(res => {
-      writeToFile('temp.md', generateMarkdown(res))
+      writeToFile('test.README.md', generateMarkdown(res))
     })
     .catch(err => console.log(err))
 }

@@ -26,7 +26,7 @@ ${data.usage}
 
 ## License
 
-${data.license}
+This application is covered under the ${data.license} license.
 
 ## Contributing
 
@@ -43,7 +43,7 @@ A: At my github profile, just follow this link: [Github Profile](https://www.git
 
 Q: How can I reach you with questions about your project?
 A: Feel free to email me at ${data.email}
-`;
+`
 }
 
 module.exports = generateMarkdown;
